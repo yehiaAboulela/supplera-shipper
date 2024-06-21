@@ -25,7 +25,7 @@ export class LoginComponent {
         if (response.message == 'done') {
           localStorage.setItem('token', response.access_token);
           console.log(response);
-          this._Router.navigate(['/home']);
+          this._Router.navigate(['/choose']);
         }
       },
       error: (err) => {

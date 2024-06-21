@@ -13,6 +13,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { SearchPipe } from './shared/pipes/search.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChoosComponent } from './components/choos/choos.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavComponent,
     MessagesComponent,
     SearchPipe,
+    ChoosComponent,
+    OrdersComponent,
+    OrderDetailsComponent,
   ],
   imports: [
     BrowserModule,

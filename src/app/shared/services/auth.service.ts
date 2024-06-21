@@ -21,4 +21,10 @@ export class AuthService {
       headers: this.headers,
     });
   }
+
+  getAllUsers(): Observable<any> {
+    return this._HttpClient.get(`http://localhost:3000/user`, {
+      headers: this.headers,
+    });
+  }
 }

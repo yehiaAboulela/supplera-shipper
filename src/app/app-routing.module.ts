@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { BlankLayoutComponent } from './components/blank-layout/blank-layout.component';
+import { ChoosComponent } from './components/choos/choos.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -12,8 +15,14 @@ const routes: Routes = [
     path: '',
     component: BlankLayoutComponent,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: 'choose', pathMatch: 'full' },
+      { path: 'choose', component: ChoosComponent },
+      { path: 'userSell', component: HomeComponent },
+      {
+        path: 'orders',
+        component: OrdersComponent,
+      },
+      { path: 'orders/:id', component: OrderDetailsComponent },
     ],
   },
 ];

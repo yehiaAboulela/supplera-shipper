@@ -1,0 +1,33 @@
+.table-parent {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
+  overflow-x: auto;
+}
+td {
+  height: 50px;
+  line-height: 50px;
+  padding-block: 20px;
+}
+.wrapper {
+  min-width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+.header .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 10px;
+}
+.header .search input {
+  background-color: transparent;
+  border: none !important;
+  height: 40px;
+  width: 100px;
+}
